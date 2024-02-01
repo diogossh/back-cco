@@ -6,6 +6,10 @@ public record DadosCadastroVeiculo(
 
 ) {
 
+    public Veiculo toVeiculo(){
+        return new Veiculo(this);
+    }
+
 
 
 }
