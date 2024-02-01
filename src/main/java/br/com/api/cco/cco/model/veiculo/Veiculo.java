@@ -1,11 +1,14 @@
 package br.com.api.cco.cco.model.veiculo;
 
 
+import br.com.api.cco.cco.model.restricao.Restricao;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
+
+import java.util.List;
 
 
 @Entity
@@ -27,5 +30,6 @@ public class Veiculo {
     private String nome;
     private String placa;
     private String tipoVeiculo;
+    private List<Restricao> restricoes;
 
 }
